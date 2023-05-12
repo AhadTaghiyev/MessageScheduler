@@ -5,8 +5,13 @@ C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\bin\Debug\net7.0
 C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\bin\Debug\net7.0\MessageScheduler.Api.runtimeconfig.json
 C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\bin\Debug\net7.0\MessageScheduler.Api.dll
 C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\bin\Debug\net7.0\MessageScheduler.Api.pdb
+C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\bin\Debug\net7.0\Azure.Core.dll
 C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\bin\Debug\net7.0\FluentValidation.dll
+C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
+C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\bin\Debug\net7.0\Humanizer.dll
 C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -29,6 +34,7 @@ C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\bin\Debug\net7.0
 C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
 C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -60,6 +66,8 @@ C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\bin\Debug\net7.0
 C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\bin\Debug\net7.0\MessageScheduler.Core.pdb
 C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\bin\Debug\net7.0\MessageScheduler.Data.pdb
 C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\obj\Debug\net7.0\MessageScheduler.Api.csproj.AssemblyReference.cache
+C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\obj\Debug\net7.0\MessageScheduler.Api.Properties.Resources.resources
+C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\obj\Debug\net7.0\MessageScheduler.Api.csproj.GenerateResource.cache
 C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\obj\Debug\net7.0\MessageScheduler.Api.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\obj\Debug\net7.0\MessageScheduler.Api.AssemblyInfoInputs.cache
 C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\obj\Debug\net7.0\MessageScheduler.Api.AssemblyInfo.cs
@@ -80,3 +88,5 @@ C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\obj\Debug\net7.0
 C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\obj\Debug\net7.0\MessageScheduler.Api.pdb
 C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\obj\Debug\net7.0\MessageScheduler.Api.genruntimeconfig.cache
 C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\obj\Debug\net7.0\ref\MessageScheduler.Api.dll
+C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\bin\Debug\net7.0\MessageScheduler.Api.xml
+C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Api\obj\Debug\net7.0\MessageScheduler.Api.xml

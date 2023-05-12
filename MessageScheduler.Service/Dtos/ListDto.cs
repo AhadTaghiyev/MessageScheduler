@@ -4,6 +4,6 @@ namespace MessageScheduler.Service.Dtos
 {
     public record ListDto<T>
     {
-        public List<T> Items { get; set; }
+        public IEnumerable<T> Items { get; set; }
     }
 }
