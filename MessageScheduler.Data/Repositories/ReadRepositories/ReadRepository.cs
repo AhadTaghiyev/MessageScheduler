@@ -12,7 +12,7 @@ namespace MessageScheduler.Data.Repositories.ReadRepositories
         public ReadRepository(MessageSchedulerDbContext context)=>_context = context;
         public DbSet<T> Table => _context.Set<T>();
 
-        public async Task<T> Get(Expression<Func<T, bool>> expression,bool IsTracking)
+        public async Task<T> Get(Expression<Func<T, bool>> expression,bool IsTracking, string[] Includes)
         {
             IQueryable<T> query=Table.Where(expression);
 
@@ -22,9 +22,9 @@ namespace MessageScheduler.Data.Repositories.ReadRepositories
             return await query.FirstOrDefaultAsync();
         }
 
-        public async Task<IQueryable<T>> GetAll()
+        public async Task<IQueryable<T>> GetAll(Expression<Func<T, bool>> expression,string[] Includes)
         {
-            return Table.AsQueryable();
+            return Table.Where(expression);
         }
     }
 }

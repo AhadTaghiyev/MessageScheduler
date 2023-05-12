@@ -1,4 +1,6 @@
-﻿using MessageScheduler.Core.Entities.BaseEntities;
+﻿using MessageScheduler.Core.Entities;
+using MessageScheduler.Core.Entities.BaseEntities;
+using MessageScheduler.Data.Configurations.Message;
 using Microsoft.EntityFrameworkCore;
 
 namespace MessageScheduler.Data.Contexs
@@ -7,6 +9,7 @@ namespace MessageScheduler.Data.Contexs
     {
         public MessageSchedulerDbContext(DbContextOptions options):base(options) { }
 
+        public DbSet<Message> Messages { get; set; }
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
             var datas = ChangeTracker
@@ -21,6 +24,11 @@ namespace MessageScheduler.Data.Contexs
                 };
             }
             return await base.SaveChangesAsync(cancellationToken);
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new MessageConfiguration());
         }
 
     }

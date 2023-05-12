@@ -5,7 +5,7 @@
 namespace MessageScheduler.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class MessageSchedulerInit : Migration
+    public partial class inital : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

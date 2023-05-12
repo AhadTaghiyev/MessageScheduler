@@ -11,6 +11,7 @@
           "MessageScheduler.Service": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.2",
           "Microsoft.EntityFrameworkCore.Design": "7.0.5",
+          "Microsoft.EntityFrameworkCore.Tools": "7.0.5",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
         "runtime": {
@@ -204,6 +205,11 @@
             "assemblyVersion": "7.0.5.0",
             "fileVersion": "7.0.523.16503"
           }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Tools/7.0.5": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "7.0.5"
         }
       },
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {},
@@ -668,6 +674,9 @@
         }
       },
       "MessageScheduler.Core/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.5"
+        },
         "runtime": {
           "MessageScheduler.Core.dll": {}
         }
@@ -675,7 +684,7 @@
       "MessageScheduler.Data/1.0.0": {
         "dependencies": {
           "MessageScheduler.Core": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "7.0.5"
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5"
         },
         "runtime": {
           "MessageScheduler.Data.dll": {}
@@ -683,8 +692,7 @@
       },
       "MessageScheduler.Service/1.0.0": {
         "dependencies": {
-          "MessageScheduler.Data": "1.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5"
+          "MessageScheduler.Data": "1.0.0"
         },
         "runtime": {
           "MessageScheduler.Service.dll": {}
@@ -795,6 +803,13 @@
       "sha512": "sha512-cUJqCiamT0EvpKNgZEV5fqNv2MyVfKNgOPQfFINqHiIKHOYrS0nTCUJP97+UuG0JIIrP792/PwnuNjbekImtBg==",
       "path": "microsoft.entityframeworkcore.sqlserver/7.0.5",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.7.0.5.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Tools/7.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OV/PUGBVSbQVd2daTeXoMBoao2qtfBgT2TuaYo48xRYUS2gH++f8OFiZc6zwASqkMKgs1/t5uVlxgKl18m/1Fw==",
+      "path": "microsoft.entityframeworkcore.tools/7.0.5",
+      "hashPath": "microsoft.entityframeworkcore.tools.7.0.5.nupkg.sha512"
     },
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
       "type": "package",

@@ -1,4 +1,11 @@
+using MessageScheduler.Core.Abstactions.Repositories.ReadRepositories;
+using MessageScheduler.Core.Abstactions.Repositories.WriteRepositories;
+using MessageScheduler.Data.Contexs;
+using MessageScheduler.Data.Repositories.ReadRepositories;
+using MessageScheduler.Data.Repositories.WriteRepositories;
 using MessageScheduler.Service.ServiceRegisterations;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +16,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddServiceRegistration(builder.Configuration);
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

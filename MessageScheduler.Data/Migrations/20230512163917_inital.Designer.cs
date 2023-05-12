@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MessageScheduler.Data.Migrations
 {
     [DbContext(typeof(MessageSchedulerDbContext))]
-    [Migration("20230512130748_MessageSchedulerInit")]
-    partial class MessageSchedulerInit
+    [Migration("20230512163917_inital")]
+    partial class inital
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -8,8 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "MessageScheduler.Service/1.0.0": {
         "dependencies": {
-          "MessageScheduler.Data": "1.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5"
+          "MessageScheduler.Data": "1.0.0"
         },
         "runtime": {
           "MessageScheduler.Service.dll": {}
@@ -608,6 +607,9 @@
         }
       },
       "MessageScheduler.Core/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.5"
+        },
         "runtime": {
           "MessageScheduler.Core.dll": {}
         }
@@ -615,7 +617,7 @@
       "MessageScheduler.Data/1.0.0": {
         "dependencies": {
           "MessageScheduler.Core": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "7.0.5"
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5"
         },
         "runtime": {
           "MessageScheduler.Data.dll": {}
