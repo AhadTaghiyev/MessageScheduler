@@ -1,0 +1,12 @@
+C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Data\bin\Debug\net7.0\MessageScheduler.Data.deps.json
+C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Data\bin\Debug\net7.0\MessageScheduler.Data.dll
+C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Data\bin\Debug\net7.0\MessageScheduler.Data.pdb
+C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Data\obj\Debug\net7.0\MessageScheduler.Data.csproj.AssemblyReference.cache
+C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Data\obj\Debug\net7.0\MessageScheduler.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Data\obj\Debug\net7.0\MessageScheduler.Data.AssemblyInfoInputs.cache
+C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Data\obj\Debug\net7.0\MessageScheduler.Data.AssemblyInfo.cs
+C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Data\obj\Debug\net7.0\MessageScheduler.Data.csproj.CoreCompileInputs.cache
+C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Data\obj\Debug\net7.0\MessageScheduler.Data.dll
+C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Data\obj\Debug\net7.0\refint\MessageScheduler.Data.dll
+C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Data\obj\Debug\net7.0\MessageScheduler.Data.pdb
+C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Data\obj\Debug\net7.0\ref\MessageScheduler.Data.dll
