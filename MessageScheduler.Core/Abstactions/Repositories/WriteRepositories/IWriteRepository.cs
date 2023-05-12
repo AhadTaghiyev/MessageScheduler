@@ -8,6 +8,6 @@ namespace MessageScheduler.Core.Abstactions.Repositories.WriteRepositories
         public Task AddAsync(T entity);
         public Task UpdateAsync(T entity);
         public Task<int> SaveAsync();
-        public void Save();
+        public int Save();
     }
 }
