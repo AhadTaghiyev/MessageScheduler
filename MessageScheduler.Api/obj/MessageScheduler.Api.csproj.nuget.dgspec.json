@@ -27,7 +27,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Ahad\\Desktop\\MessageScheduler.Api\\MessageScheduler.Service\\MessageScheduler.Service.csproj": {
+                "projectPath": "C:\\Users\\Ahad\\Desktop\\MessageScheduler.Api\\MessageScheduler.Service\\MessageScheduler.Service.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -64,6 +68,191 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Ahad\\Desktop\\MessageScheduler.Api\\MessageScheduler.Core\\MessageScheduler.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ahad\\Desktop\\MessageScheduler.Api\\MessageScheduler.Core\\MessageScheduler.Core.csproj",
+        "projectName": "MessageScheduler.Core",
+        "projectPath": "C:\\Users\\Ahad\\Desktop\\MessageScheduler.Api\\MessageScheduler.Core\\MessageScheduler.Core.csproj",
+        "packagesPath": "C:\\Users\\Ahad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ahad\\Desktop\\MessageScheduler.Api\\MessageScheduler.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ahad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Ahad\\Desktop\\MessageScheduler.Api\\MessageScheduler.Data\\MessageScheduler.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ahad\\Desktop\\MessageScheduler.Api\\MessageScheduler.Data\\MessageScheduler.Data.csproj",
+        "projectName": "MessageScheduler.Data",
+        "projectPath": "C:\\Users\\Ahad\\Desktop\\MessageScheduler.Api\\MessageScheduler.Data\\MessageScheduler.Data.csproj",
+        "packagesPath": "C:\\Users\\Ahad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ahad\\Desktop\\MessageScheduler.Api\\MessageScheduler.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ahad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Ahad\\Desktop\\MessageScheduler.Api\\MessageScheduler.Core\\MessageScheduler.Core.csproj": {
+                "projectPath": "C:\\Users\\Ahad\\Desktop\\MessageScheduler.Api\\MessageScheduler.Core\\MessageScheduler.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Ahad\\Desktop\\MessageScheduler.Api\\MessageScheduler.Service\\MessageScheduler.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ahad\\Desktop\\MessageScheduler.Api\\MessageScheduler.Service\\MessageScheduler.Service.csproj",
+        "projectName": "MessageScheduler.Service",
+        "projectPath": "C:\\Users\\Ahad\\Desktop\\MessageScheduler.Api\\MessageScheduler.Service\\MessageScheduler.Service.csproj",
+        "packagesPath": "C:\\Users\\Ahad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ahad\\Desktop\\MessageScheduler.Api\\MessageScheduler.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ahad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Ahad\\Desktop\\MessageScheduler.Api\\MessageScheduler.Data\\MessageScheduler.Data.csproj": {
+                "projectPath": "C:\\Users\\Ahad\\Desktop\\MessageScheduler.Api\\MessageScheduler.Data\\MessageScheduler.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
