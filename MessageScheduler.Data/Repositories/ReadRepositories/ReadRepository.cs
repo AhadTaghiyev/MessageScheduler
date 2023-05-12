@@ -6,10 +6,10 @@ using System.Linq.Expressions;
 
 namespace MessageScheduler.Data.Repositories.ReadRepositories
 {
-    public class ReadRpository<T> :IReadRepository<T> where T : BaseEntity, new()
+    public class ReadRepository<T> :IReadRepository<T> where T : BaseEntity, new()
     {
         private readonly MessageSchedulerDbContext _context;
-        public ReadRpository(MessageSchedulerDbContext context)=>_context = context;
+        public ReadRepository(MessageSchedulerDbContext context)=>_context = context;
         public DbSet<T> Table => _context.Set<T>();
 
         public async Task<T> Get(Expression<Func<T, bool>> expression,bool IsTracking)
