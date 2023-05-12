@@ -10,3 +10,8 @@ C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Data\obj\Debug\net7.
 C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Data\obj\Debug\net7.0\refint\MessageScheduler.Data.dll
 C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Data\obj\Debug\net7.0\MessageScheduler.Data.pdb
 C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Data\obj\Debug\net7.0\ref\MessageScheduler.Data.dll
+C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Data\bin\Debug\net7.0\MessageScheduler.Core.dll
+C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Data\bin\Debug\net7.0\MessageScheduler.Core.pdb
+C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Data\obj\Debug\net7.0\MessageScheduler.Data.csproj.CopyComplete
+C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Data\bin\Debug\net7.0\MessageScheduler.Data.runtimeconfig.json
+C:\Users\Ahad\Desktop\MessageScheduler.Api\MessageScheduler.Data\obj\Debug\net7.0\MessageScheduler.Data.genruntimeconfig.cache

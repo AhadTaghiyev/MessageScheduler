@@ -1,8 +1,9 @@
-﻿namespace MessageScheduler.Core.Entities
+﻿using MessageScheduler.Core.Entities.BaseEntities;
+
+namespace MessageScheduler.Core.Entities
 {
-    public class Message
+    public class Message: BaseEntity
     {
-        public int Id { get; set; }
         public string To { get; set; }
         public string Content { get; set; }
         public DateTime SendAt { get; set; }

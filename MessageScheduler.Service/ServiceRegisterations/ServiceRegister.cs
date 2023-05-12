@@ -9,11 +9,14 @@ namespace MessageScheduler.Service.ServiceRegisterations
 {
     public static class ServiceRegister
     {
-        public static void AddServiceRegisteration(this IServiceCollection services, IConfiguration configuration)
+      
+        public static void AddServiceRegistration(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<MessageSchedulerDbContext>(options => {
+            services.AddDbContext<MessageSchedulerDbContext>(options =>
+            {
                 options.UseSqlServer(configuration.GetConnectionString("Default"));
             });
         }
+
     }
 }
