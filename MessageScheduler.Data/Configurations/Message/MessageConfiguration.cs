@@ -11,6 +11,7 @@ namespace MessageScheduler.Data.Configurations.Message
             builder.Property(x=>x.IsDeleted).HasDefaultValue(false);
             builder.Property(x => x.Content).IsRequired();
             builder.Property(x=>x.To).IsRequired();
+            builder.Property(x=>x.Method).IsRequired();
         }
     }
 }

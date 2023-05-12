@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "1vhnJpviVXASssEANLQ89TZoWnBwObbsM2UKw1DOj7TgB/gB0syE2b3HSzx7RIOX9Fs+ROfPwHPj+zByrEUmeA==",
+  "dgSpecHash": "ld8xJ/9C0Qk2zwNu9I0K3S2pUO23yMlO51++rbD+yCOoEhmRVk5oyitW/T6EExPP0iKqt1v93L9h5ir4vLBnNA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ahad\\Desktop\\MessageScheduler.Api\\MessageScheduler.Api\\MessageScheduler.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ahad\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Ahad\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\Ahad\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
+    "C:\\Users\\Ahad\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\Ahad\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.2\\fluentvalidation.dependencyinjectionextensions.11.5.2.nupkg.sha512",
     "C:\\Users\\Ahad\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Ahad\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.2\\microsoft.aspnetcore.openapi.7.0.2.nupkg.sha512",
     "C:\\Users\\Ahad\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
