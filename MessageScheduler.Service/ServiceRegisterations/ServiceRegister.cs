@@ -5,6 +5,7 @@ using MessageScheduler.Data.Contexs;
 using MessageScheduler.Data.Repositories.ReadRepositories;
 using MessageScheduler.Data.Repositories.WriteRepositories;
 using MessageScheduler.Service.Dtos.MessageDto;
+using MessageScheduler.Service.Profiles;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -25,6 +26,10 @@ namespace MessageScheduler.Service.ServiceRegisterations
             });
             services.AddScoped<IMessageWriteRepository, MessageWriteRepository>();
             services.AddScoped<IMessageReadRepository, MessageReadRepository>();
+            services.AddAutoMapper(opt =>
+            {
+                opt.AddProfile(new MapProfile());
+            });
         }
 
     }
