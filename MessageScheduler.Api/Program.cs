@@ -1,3 +1,4 @@
+using AspNetCoreRateLimit;
 using FluentValidation.AspNetCore;
 using Hangfire;
 using MessageScheduler.Core.Abstactions.Repositories.ReadRepositories;
@@ -10,6 +11,7 @@ using MessageScheduler.Service.Extensions;
 using MessageScheduler.Service.ServiceRegisterations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -34,7 +36,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseRateLimiter();
 app.UseHangfireDashboard("/hangfire");
 app.UseCustomExceptionHandler();
 app.UseHttpsRedirection();

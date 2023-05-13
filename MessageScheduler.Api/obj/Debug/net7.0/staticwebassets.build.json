@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "DOPuQ83IgGxaJptnxAonqbpA9Z+npQjdCcK0jKwNfMQ=",
+  "Source": "MessageScheduler.Api",
+  "BasePath": "_content/MessageScheduler.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -2,12 +2,16 @@
 using MessageScheduler.Service.Services.Implementations;
 using MessageScheduler.Service.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.Net;
+using AspNetCoreRateLimit;
+using Microsoft.AspNetCore.RateLimiting;
 
 namespace MessageScheduler.Api.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]
+    [EnableRateLimiting("Basic")]
     public class MessagesController : ControllerBase
     {
         private readonly IMessageService _messageService;
@@ -15,6 +19,7 @@ namespace MessageScheduler.Api.Controllers
 
         public MessagesController(IMessageService messageService) => _messageService = messageService;
 
+      
         #region Xml Documentation
         /// <summary>
         /// create message
