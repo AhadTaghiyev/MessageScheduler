@@ -1,4 +1,5 @@
 using FluentValidation.AspNetCore;
+using Hangfire;
 using MessageScheduler.Core.Abstactions.Repositories.ReadRepositories;
 using MessageScheduler.Core.Abstactions.Repositories.WriteRepositories;
 using MessageScheduler.Data.Contexs;
@@ -33,8 +34,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseHangfireDashboard("/hangfire");
 app.UseCustomExceptionHandler();
 app.UseHttpsRedirection();
+
 
 app.UseAuthorization();
 

@@ -13,13 +13,13 @@ namespace MessageScheduler.Service.Validations.MessageDtos
             RuleFor(x => x.Content).NotNull()
                 .MinimumLength(1)
                     .WithMessage("The field in the context is required to have a minimum length of 1");
-            RuleFor(x => x.SendAt).Custom((sendAt, context) =>
-            {
-                if (sendAt <= DateTime.UtcNow.AddHours(4))
-                {
-                    context.AddFailure("The date must be a future date.");
-                }
-            }).NotNull().NotEmpty();
+            //RuleFor(x => x.SendAt).Custom((sendAt, context) =>
+            //{
+            //    if (sendAt <= DateTime.UtcNow.AddHours(4))
+            //    {
+            //        context.AddFailure("The date must be a future date.");
+            //    }
+            //}).NotNull().NotEmpty();
             RuleFor(x => x.Method).NotEmpty().NotNull().Custom((method, context) =>
             {
                 if (method.Trim().ToLower() == "telegram" || method.Trim().ToLower() == "email")
@@ -32,7 +32,7 @@ namespace MessageScheduler.Service.Validations.MessageDtos
             {
                 if (x.Method.Trim().ToLower() == "email")
                 {
-                    Regex regex = new Regex("\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}\\b\r\n");
+                    Regex regex = new Regex(@"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$");
 
                     if (!regex.IsMatch(x.To))
                         context.AddFailure("Please add a valid email address.");

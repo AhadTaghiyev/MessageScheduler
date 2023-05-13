@@ -9,8 +9,11 @@ using MessageScheduler.Service.Dtos.MessageDto;
 using MessageScheduler.Service.Exceptions;
 using MessageScheduler.Service.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using System.Linq.Expressions;
 using System.Net;
+using System.Security.Cryptography.X509Certificates;
 
 namespace MessageScheduler.Service.Services.Implementations
 {
@@ -20,13 +23,15 @@ namespace MessageScheduler.Service.Services.Implementations
         private readonly IMessageWriteRepository _write;
         private readonly IMapper _mapper;
         private readonly ILogger<MessageService> _logger;
+        private readonly IConfiguration _configuration;
 
-        public MessageService(IMessageReadRepository read, IMessageWriteRepository write, IMapper mapper, ILogger<MessageService> logger)
+        public MessageService(IMessageReadRepository read, IMessageWriteRepository write, IMapper mapper, ILogger<MessageService> logger,IConfiguration configuration)
         {
             _read = read;
             _write = write;
             _mapper = mapper;
             _logger = logger;
+            _configuration = configuration;
         }
 
         public async Task CreateAsync(MessagePostDto postDto)
@@ -35,6 +40,16 @@ namespace MessageScheduler.Service.Services.Implementations
             await _write.AddAsync(message);
             await _write.SaveAsync();
             _logger.Log(LogLevel.Information, $"{DateTime.UtcNow.AddHours(4)}-   message with id: {message.Id} Created : Create success");
+
+            ISender sender;
+
+            if (postDto.Method.Trim().ToLower() == "email")
+                sender = new MailService(_configuration);
+            else
+                sender=  new TelegramService(_configuration);
+
+            Expression<Action> sendExpression = () => sender.Send(postDto.To,postDto.Content);
+            await BackGroundJobs.MessageJob.SedMessage(sendExpression, postDto.SendAt);
         }
 
         public async Task DeleteAsync(int id)
@@ -43,6 +58,7 @@ namespace MessageScheduler.Service.Services.Implementations
             await ThrowIfNull(message, id);
             await _write.UpdateAsync(message);
             await _write.SaveAsync();
+
             _logger.Log(LogLevel.Information, $"message with id: {message.Id} Deleted");
         }
 

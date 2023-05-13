@@ -1,4 +1,5 @@
 ﻿using MessageScheduler.Service.Dtos.MessageDto;
+using MessageScheduler.Service.Services.Implementations;
 using MessageScheduler.Service.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
@@ -10,6 +11,7 @@ namespace MessageScheduler.Api.Controllers
     public class MessagesController : ControllerBase
     {
         private readonly IMessageService _messageService;
+        private readonly IConfiguration _configuration;
 
         public MessagesController(IMessageService messageService) => _messageService = messageService;
 
@@ -118,7 +120,7 @@ namespace MessageScheduler.Api.Controllers
         ///        "method":"Email/Telegram"
         ///     }
         /// </remarks>
-        /// <response code="200">New message updated succeffuly</response>
+        /// <response code="200"> message updated succeffuly</response>
         /// <response code="400">Bad request</response>
         /// <response code="404">not found</response>
         /// <param name="id"></param>
@@ -137,23 +139,12 @@ namespace MessageScheduler.Api.Controllers
         /// <summary>
         /// delete message
         /// </summary>
-        ///     /// <remarks>
-        /// Sample request:
-        /// 
-        ///     Put /api/v1/Messages/Delete
-        ///     {
-        ///        "to":"taghiyev.ahad@gmail.com/123456",
-        ///        "content":"Hello",
-        ///        "sendAt":"2023-05-12T20:52:39.484Z",
-        ///        "method":"Email/Telegram"
-        ///     }
-        /// </remarks>
-        /// <response code="200">New message updated succeffuly</response>
+        /// <response code="200"> message deleted succeffuly</response>
         /// <response code="404">not found</response>
         /// <param name="id"></param>
         /// <returns></returns>
         #endregion
-        [HttpDelete("id")]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProductById([FromRoute] int id)
         {
             await _messageService.DeleteAsync(id);

@@ -1,5 +1,6 @@
 ﻿using FluentValidation.AspNetCore;
 using FluentValidation.Internal;
+using Hangfire;
 using MessageScheduler.Core.Abstactions.Repositories.ReadRepositories;
 using MessageScheduler.Core.Abstactions.Repositories.WriteRepositories;
 using MessageScheduler.Data.Contexs;
@@ -28,6 +29,13 @@ namespace MessageScheduler.Service.ServiceRegisterations
             {
                 options.UseSqlServer(configuration.GetConnectionString("Default"));
             });
+
+            services.AddHangfire(options =>
+            {
+                options.UseSqlServerStorage(configuration.GetConnectionString("Default"));
+            });
+
+            services.AddHangfireServer();
             services.AddScoped<IMessageWriteRepository, MessageWriteRepository>();
             services.AddScoped<IMessageReadRepository, MessageReadRepository>();
             services.AddScoped<IMessageService, MessageService>();
@@ -35,7 +43,7 @@ namespace MessageScheduler.Service.ServiceRegisterations
             {
                 opt.AddProfile(new MapProfile());
             });
-           
+
         }
 
     }

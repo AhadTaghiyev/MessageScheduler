@@ -80,7 +80,7 @@
                 /// <remarks>
             Sample request:
             
-                Put /api/v1/Messages/Update
+                Put /api/v1/Messages/Update/3
                 {
                    "to":"taghiyev.ahad@gmail.com/123456",
                    "content":"Hello",
@@ -88,7 +88,7 @@
                    "method":"Email/Telegram"
                 }
             </remarks>
-            <response code="200">New message updated succeffuly</response>
+            <response code="200"> message updated succeffuly</response>
             <response code="400">Bad request</response>
             <response code="404">not found</response>
             <param name="id"></param>
@@ -99,18 +99,7 @@
             <summary>
             delete message
             </summary>
-                /// <remarks>
-            Sample request:
-            
-                Put /api/v1/Messages/Delete
-                {
-                   "to":"taghiyev.ahad@gmail.com/123456",
-                   "content":"Hello",
-                   "sendAt":"2023-05-12T20:52:39.484Z",
-                   "method":"Email/Telegram"
-                }
-            </remarks>
-            <response code="200">New message updated succeffuly</response>
+            <response code="200"> message deleted succeffuly</response>
             <response code="404">not found</response>
             <param name="id"></param>
             <returns></returns>

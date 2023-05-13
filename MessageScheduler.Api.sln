@@ -5,11 +5,13 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageScheduler.Api", "MessageScheduler.Api\MessageScheduler.Api.csproj", "{121E1F10-6F20-4D0C-AAEE-236FDBBC3681}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageScheduler.Core", "MessageScheduler.Core\MessageScheduler.Core.csproj", "{DE11496A-A84B-4181-8993-27B1C877E751}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageScheduler.Core", "MessageScheduler.Core\MessageScheduler.Core.csproj", "{DE11496A-A84B-4181-8993-27B1C877E751}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageScheduler.Data", "MessageScheduler.Data\MessageScheduler.Data.csproj", "{27B9567D-DC3A-4798-A6E0-83E632C96E55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageScheduler.Data", "MessageScheduler.Data\MessageScheduler.Data.csproj", "{27B9567D-DC3A-4798-A6E0-83E632C96E55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageScheduler.Service", "MessageScheduler.Service\MessageScheduler.Service.csproj", "{A6A19F60-16B3-4A2C-B863-947A80AB36F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageScheduler.Service", "MessageScheduler.Service\MessageScheduler.Service.csproj", "{A6A19F60-16B3-4A2C-B863-947A80AB36F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageScheduler.Test", "MessageScheduler.Test\MessageScheduler.Test.csproj", "{8382C96A-23C8-4D32-AC5C-EED949F32DDD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{A6A19F60-16B3-4A2C-B863-947A80AB36F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6A19F60-16B3-4A2C-B863-947A80AB36F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6A19F60-16B3-4A2C-B863-947A80AB36F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8382C96A-23C8-4D32-AC5C-EED949F32DDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8382C96A-23C8-4D32-AC5C-EED949F32DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8382C96A-23C8-4D32-AC5C-EED949F32DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8382C96A-23C8-4D32-AC5C-EED949F32DDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
