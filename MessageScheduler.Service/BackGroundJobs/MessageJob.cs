@@ -1,4 +1,5 @@
-﻿using MessageScheduler.Service.Services.Interfaces;
+﻿using Hangfire.Common;
+using MessageScheduler.Service.Services.Interfaces;
 using System.Linq.Expressions;
 
 namespace MessageScheduler.Service.BackGroundJobs
@@ -6,10 +7,19 @@ namespace MessageScheduler.Service.BackGroundJobs
     public class MessageJob
     {
 
-        public static async Task SedMessage(Expression<Action> sendExpression, DateTime dateTime)
+        public static async Task<string> SedMessage(Expression<Action> sendExpression, DateTime dateTime)
         {
             TimeSpan timeDifference = dateTime - DateTime.UtcNow;
-            Hangfire.BackgroundJob.Schedule(sendExpression,timeDifference);
+            var JobId = Hangfire.BackgroundJob.Schedule(sendExpression, timeDifference);
+            return JobId;
         }
+
+        public static async Task DeleteMessage(string id)
+        {
+            Hangfire.BackgroundJob.Delete(id);
+        }
+
+
+
     }
 }

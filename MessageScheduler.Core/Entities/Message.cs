@@ -8,5 +8,6 @@ namespace MessageScheduler.Core.Entities
         public string Content { get; set; }
         public DateTime SendAt { get; set; }
         public string Method { get; set; }
+        public string JobId { get; set; }
     }
 }

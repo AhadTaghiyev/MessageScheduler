@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageScheduler.Data", "Me
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageScheduler.Service", "MessageScheduler.Service\MessageScheduler.Service.csproj", "{A6A19F60-16B3-4A2C-B863-947A80AB36F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageScheduler.Test", "MessageScheduler.Test\MessageScheduler.Test.csproj", "{8382C96A-23C8-4D32-AC5C-EED949F32DDD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageScheduler.Test", "MessageScheduler.Test\MessageScheduler.Test.csproj", "{A3F26F47-A2CE-4161-910F-DFACD9DC72CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{A6A19F60-16B3-4A2C-B863-947A80AB36F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6A19F60-16B3-4A2C-B863-947A80AB36F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6A19F60-16B3-4A2C-B863-947A80AB36F9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8382C96A-23C8-4D32-AC5C-EED949F32DDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8382C96A-23C8-4D32-AC5C-EED949F32DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8382C96A-23C8-4D32-AC5C-EED949F32DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8382C96A-23C8-4D32-AC5C-EED949F32DDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3F26F47-A2CE-4161-910F-DFACD9DC72CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3F26F47-A2CE-4161-910F-DFACD9DC72CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3F26F47-A2CE-4161-910F-DFACD9DC72CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3F26F47-A2CE-4161-910F-DFACD9DC72CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

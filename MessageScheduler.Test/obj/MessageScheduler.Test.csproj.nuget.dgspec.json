@@ -367,31 +367,31 @@
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.3.2, )"
-            },
-            "Moq": {
-              "target": "Package",
-              "version": "[4.18.4, )"
+              "version": "[17.5.0, )"
             },
             "NUnit": {
               "target": "Package",
               "version": "[3.13.3, )"
             },
-            "NUnit.Analyzers": {
+            "NUnit.Console": {
               "target": "Package",
-              "version": "[3.3.0, )"
+              "version": "[3.16.3, )"
+            },
+            "NUnit.ConsoleRunner": {
+              "target": "Package",
+              "version": "[3.16.3, )"
+            },
+            "NUnit.Extension.NUnitProjectLoader": {
+              "target": "Package",
+              "version": "[3.7.1, )"
+            },
+            "NUnit.Extension.NUnitV2Driver": {
+              "target": "Package",
+              "version": "[3.9.0, )"
             },
             "NUnit3TestAdapter": {
               "target": "Package",
-              "version": "[4.2.1, )"
-            },
-            "coverlet.collector": {
-              "target": "Package",
-              "version": "[3.1.2, )"
-            },
-            "xunit.extensibility.core": {
-              "target": "Package",
-              "version": "[2.4.2, )"
+              "version": "[4.4.2, )"
             }
           },
           "imports": [
