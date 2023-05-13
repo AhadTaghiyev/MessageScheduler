@@ -13,13 +13,13 @@ namespace MessageScheduler.Service.Validations.MessageDtos
             RuleFor(x => x.Content).NotNull()
                 .MinimumLength(1)
                     .WithMessage("The field in the context is required to have a minimum length of 1");
-            //RuleFor(x => x.SendAt).Custom((sendAt, context) =>
-            //{
-            //    if (sendAt <= DateTime.UtcNow.AddHours(4))
-            //    {
-            //        context.AddFailure("The date must be a future date.");
-            //    }
-            //}).NotNull().NotEmpty();
+            RuleFor(x => x.SendAt).Custom((sendAt, context) =>
+            {
+                if (sendAt <= DateTime.UtcNow.AddHours(4))
+                {
+                    context.AddFailure("The date must be a future date. (GMT+4) Time in Azerbaijan");
+                }
+            }).NotNull().NotEmpty();
             RuleFor(x => x.Method).NotEmpty().NotNull().Custom((method, context) =>
             {
                 if (method.Trim().ToLower() == "telegram" || method.Trim().ToLower() == "email")
