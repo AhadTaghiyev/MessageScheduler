@@ -47,16 +47,12 @@ namespace MessageScheduler.Service.ServiceRegisterations
             {
                 options.AddFixedWindowLimiter("Basic", _options =>
                 {
-                    _options.Window=TimeSpan.FromSeconds(12);
+                    _options.Window=TimeSpan.FromSeconds(10);
                     _options.PermitLimit = 4;
-                    _options.QueueLimit = 5;
+                    _options.QueueLimit = 1;
                     _options.QueueProcessingOrder = QueueProcessingOrder.OldestFirst;
                 });
             });
-      
-
-
-
         }
 
     }
